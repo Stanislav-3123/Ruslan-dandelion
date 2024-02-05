@@ -2,12 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+.mobile_header {
+    @apply sm:hidden bg-blue-100 w-full fixed top-0 h-14 pl-4 rounded-b-[20px] shadow-lg justify-between items-center inline-flex z-40
+}
+.navbar_link {
+    @apply p-4 text-neutral-900 text-sm font-normal font-['Roboto'] uppercase
+}
+.navbar_p {
+    @apply text-neutral-900 text-sm font-normal font-['Roboto'] leading-snug
+}
+.black_button {
+    @apply border hover:bg-blue-100 duration-300 hover:text-neutral-900 hover:border border-neutral-900 cursor-pointer w-full text-center text-white text-sm font-normal font-['Roboto'] bg-neutral-900 rounded-[100px] px-8 py-4
+}
+.active {
+    @apply duration-300 underline underline-offset-[10px]
+}
+.header_link {
+    @apply duration-300 hover:underline underline-offset-[10px]
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 body {
@@ -15,12 +34,21 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #F6F6F6;
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
-}
+    background-color: #D9E6F9;
 
+}
+h3 {
+    @apply text-sky-950 text-2xl font-semibold font-['Roboto'] leading-[38.40px]
+}
+h1 {
+    @apply w-[328px] text-neutral-900 text-5xl font-bold font-['Syncopate'] uppercase
+}
+p {
+    @apply text-zinc-700 text-sm font-normal font-['Roboto'] leading-snug
+}
 code {
     font-family: sourse-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

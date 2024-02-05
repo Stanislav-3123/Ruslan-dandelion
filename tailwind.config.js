@@ -13,8 +13,17 @@ export default {
             animation: {
                 "slide-down": "slide-down 0.8s",
                 "fade-in": "fade-in 0.8s",
+                "open-mobile-menu": "slide-left 0.8s",
             },
             keyframes: {
+                "slide-left": {
+                    "0%": {
+                        transform: "translateX(300px)",
+                    },
+                    "100%": {
+                        transform: "translateY(0)",
+                    },
+                },
                 right: {
                     '0%, 100%': {transform: 'translateX(-25%)'},
                     '50%': {transform: 'none'}
