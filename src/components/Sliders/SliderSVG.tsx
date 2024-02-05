@@ -2,7 +2,7 @@
 const SliderSVG = () => {
     return (
         <div
-            className="overflow-y-hidden self-stretch  h-full justify-start  items-start inline-flex">
+            className="overflow-y-hidden self-stretch h-full justify-start items-start inline-flex">
             <div className="flex gap-2 px-4">
                 <div
                     className="px-4 w-[200px] py-[25px] flex-col rounded-[40px] bg-white justify-start items-start gap-[26px] inline-flex">

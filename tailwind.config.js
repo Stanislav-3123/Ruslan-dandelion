@@ -13,7 +13,7 @@ export default {
             animation: {
                 "slide-down": "slide-down 0.8s",
                 "fade-in": "fade-in 0.8s",
-                "open-mobile-menu": "slide-left 0.8s",
+                "open-mobile-menu": "slide-left 0.5s",
             },
             keyframes: {
                 "slide-left": {
@@ -48,6 +48,7 @@ export default {
                 },
             },
             colors: {
+                light_blue: "#44699F"
             }
         },
     },

@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {useState} from "react";
 import {WriteToUsButton} from "../Buttons/WriteToUsButton.tsx";
 
@@ -44,13 +44,16 @@ const MobileHeader = () => {
                                     <Link to={'/'} onClick={handleClick}
                                           className="bg-[url('/images/Smart-choice.svg')] w-[170.58px] h-4 bg-cover flex self-start"/>
                                     <div className="flex flex-col gap-4">
-                                        <Link to={"/contacts"} className="navbar_link">CONTACTS</Link>
-                                        <Link to={"/policies"} className="navbar_link">POLICIES</Link>
+                                        <NavLink onClick={() => setIsOpen(true)}
+                                                 to={"/contacts"} className="navbar_link">CONTACTS</NavLink>
+                                        <NavLink onClick={() => setIsOpen(true)}
+                                                 to={"/policies"} className="navbar_link">POLICIES</NavLink>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-8">
                                     <div className="flex flex-col gap-4 py-8 border-t-[2px] border-b border-slate-300">
-                                        <p className="navbar_p">Dictum elit. Et. Molestie tempus vulputate ultricies. Dictum. Odio.</p>
+                                        <p className="navbar_p">Dictum elit. Et. Molestie tempus vulputate ultricies.
+                                            Dictum. Odio.</p>
                                         <p className="navbar_p">(555) 555-55-55</p>
                                         <p className="navbar_p">mail</p>
                                     </div>
