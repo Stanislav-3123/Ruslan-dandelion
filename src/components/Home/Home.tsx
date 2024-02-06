@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs/AboutUs.tsx";
 import OurSolutions from "./OurSolutions/OurSolutions.tsx";
 import Faq from "./FAQ/Faq.tsx";
 import ContactForm from "../ContactForm/ContactForm.tsx";
+import KeyAspects from "./KeyAspects/KeyAspects.tsx";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <OurSolutions/>
             <Faq/>
             <ContactForm/>
+            <KeyAspects/>
         </div>
     );
 };
