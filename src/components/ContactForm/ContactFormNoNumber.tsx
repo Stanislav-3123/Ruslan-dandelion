@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 
-const ContactForm = () => {
+const ContactFormNoNumber = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [])
@@ -9,7 +9,6 @@ const ContactForm = () => {
     return (
         <div className="py-8 px-4 flex flex-col w-full bg-white rounded-[30px] gap-12">
             <div className="w-full flex flex-row justify-between">
-                <p className="description_number">(04)</p>
                 <h2>CONTACT FORM</h2>
             </div>
             <h3><span className="blue_span">Fill out this form 
@@ -35,7 +34,7 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default ContactFormNoNumber;
 
 // import React, {useEffect, useState} from "react";
 // import {Link} from "react-router-dom";

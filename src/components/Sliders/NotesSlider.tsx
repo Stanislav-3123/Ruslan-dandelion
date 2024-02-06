@@ -48,7 +48,7 @@ const NotesSlider = () => {
                         <div className="text-slate-300 text-base font-bold font-['Syncopate']">02</div>
                     </div>
                     <div className="flex flex-col gap-8">
-                        {isActive3 ? <p className="text-white text-base font-semibold font-['Roboto'] leading-relaxed">
+                        {isActive2 ? <p className="text-white text-base font-semibold font-['Roboto'] leading-relaxed">
                                 User-friendly interface for an enhanced gaming experience
                             </p>
                             : <p>Mollis nisi eget eleifend platea amet,
@@ -117,7 +117,7 @@ const NotesSlider = () => {
                         <div className="text-slate-300 text-base font-bold font-['Syncopate']">05</div>
                     </div>
                     <div className="flex flex-col gap-8">
-                        {isActive4 ? <p className="text-white text-base font-semibold font-['Roboto'] leading-relaxed">
+                        {isActive5 ? <p className="text-white text-base font-semibold font-['Roboto'] leading-relaxed">
                                 Real-time analytics for optimized gaming experiences
                             </p>
                             : <p>Mollis nisi eget eleifend platea amet,

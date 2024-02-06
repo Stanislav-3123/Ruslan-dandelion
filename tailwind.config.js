@@ -48,7 +48,8 @@ export default {
                 },
             },
             colors: {
-                light_blue: "#44699F"
+                light_blue: "#44699F",
+                dark_blue: "#0E2146"
             }
         },
     },

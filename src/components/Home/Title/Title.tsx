@@ -1,4 +1,5 @@
 import SliderSVG from "../../Sliders/SliderSVG.tsx";
+import {Link} from "react-scroll";
 
 const Title = () => {
     return (
@@ -10,7 +11,7 @@ const Title = () => {
                 improve their business and attract more players.</p>
             <div className="mx-auto bg-cover bg-[url('/images/image/mainCub.png')] w-[280px] h-[280px]"/>
             <div className="px-4">
-                <div
+                <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
                     className="cursor-pointer bg-white bg-opacity-20 rounded-[100px] border border-white flex flex-row p-4 gap-4 w-full">
                     <p className="w-full self-center">Do you want to collaborate with us?</p>
                     <button className="w-[200px] flex flex-row gap-2 whitespace-nowrap">
@@ -21,7 +22,7 @@ const Title = () => {
                             <path fill="#fff" d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8-8 8-1.425-1.4 5.6-5.6Z"/>
                         </svg>
                     </button>
-                </div>
+                </Link>
             </div>
             <SliderSVG/>
         </div>
