@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.fr {
+    @apply flex flex-row
+}
+.fc {
+    @apply flex flex-col
+}
 .policies_headers {
     @apply text-neutral-900 text-lg font-bold font-['Syncopate'] uppercase
 }
@@ -29,7 +39,7 @@
     @apply text-neutral-900 text-sm font-normal font-['Roboto'] leading-snug
 }
 .black_button {
-    @apply border hover:bg-blue-100 duration-300 hover:text-neutral-900 hover:border border-neutral-900 cursor-pointer w-full text-center text-white text-sm font-normal font-['Roboto'] bg-neutral-900 rounded-[100px] px-8 py-4
+    @apply border hover:bg-blue-100 duration-300 hover:text-neutral-900 hover:border border-neutral-900 cursor-pointer w-full text-center text-white text-sm sm:text-base font-normal font-['Roboto'] bg-neutral-900 rounded-[100px] px-8 py-4
 }
 .floating_button {
     @apply z-30 sm:hidden fixed bottom-4 right-4 border hover:bg-blue-100 duration-300 hover:text-neutral-900 hover:border border-neutral-900 cursor-pointer w-auto text-center text-white text-sm font-normal font-['Roboto'] bg-neutral-900 rounded-[100px] px-8 py-4
@@ -38,7 +48,7 @@
     @apply duration-300 underline underline-offset-[10px]
 }
 .header_link {
-    @apply duration-200 hover:underline underline-offset-[10px]
+    @apply duration-200 hover:underline underline-offset-[10px] sm:text-neutral-900 sm:text-base sm:font-normal sm:font-['Roboto'] sm:uppercase
 }
 .faq_button {
     @apply self-start px-4 py-2 bg-slate-300 bg-opacity-10 rounded-[100px] border border-slate-300 border-opacity-80 justify-center items-center flex text-light_blue text-sm font-normal font-['Roboto'] uppercase

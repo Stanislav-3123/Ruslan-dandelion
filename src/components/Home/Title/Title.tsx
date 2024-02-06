@@ -3,7 +3,7 @@ import {Link} from "react-scroll";
 
 const Title = () => {
     return (
-        <div className="w-full mb:h-full h-[587pxpx] flex-col justify-start gap-8 items-start inline-flex">
+        <div className="w-full mb:h-full h-[587pxpx] sm:hidden flex-col justify-start gap-8 items-start inline-flex">
             <h1 className="px-4">SMART CHOICE</h1>
             <h3 className="px-4">Smart Choice is a modern software company</h3>
             <p className="px-4">Our company develops software for gambling companies.

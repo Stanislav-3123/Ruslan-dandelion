@@ -1,5 +1,7 @@
 import {Link} from "react-scroll";
 import {useEffect} from "react";
+import ContactFormNoNumber from "../ContactForm/ContactFormNoNumber.tsx";
+import NavTabsMobile from "./NavTabsMobile.tsx";
 
 const PoliciesPage = () => {
     useEffect(() => {
@@ -24,9 +26,9 @@ const PoliciesPage = () => {
                     </button>
                 </Link>
             </div>
-            {/*<NavTabsMobile/>*/}
+            <NavTabsMobile/>
             <div className="bg-white rounded-[30px] px-4 py-8 flex flex-col gap-12 w-full">
-                <div className="flex flex-col gap-8">
+                <div id={"first"} className="flex flex-col gap-8">
                     <h4 className="policies_headers">PRIVACY POLICY</h4>
                     <p>Arcu cras urna dui quam, lectus sapien
                         lorem sit dictum dapibus pulvinar sit
@@ -38,7 +40,7 @@ const PoliciesPage = () => {
                         Et. Amet ultricies. Ut. In est. Pulvinar
                         lectus non interdum non elit. Elit. Faucibus.</h5>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div id={"second"} className="flex flex-col gap-8">
                     <h4 className="policies_headers">Luctus libero, nec cursus pellentesque</h4>
                     <p>Adipiscing ipsum sed tempus eleifend justo quam,
                         venenatis cras hac nunc molestie hac consectetur
@@ -58,7 +60,7 @@ const PoliciesPage = () => {
                         mattis sed lorem pulvinar sodales dictum. Arcu mattis aenean eleifend et
                         habitasse habitasse ornare dapibus amet in ex. Lectus luctus sit dictumst.</h5>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div id={"third"} className="flex flex-col gap-8">
                     <h4 className=" policies_headers">Luctus libero, nec cursus pellentesque</h4>
                     <ol className="px-4 list-disc">
                         <li>Adipiscing ipsum sed tempus eleifend justo quam</li>
@@ -87,6 +89,7 @@ const PoliciesPage = () => {
                         Lectus luctus sit dictumst.</p>
                 </div>
             </div>
+            <ContactFormNoNumber/>
         </div>
     );
 };
