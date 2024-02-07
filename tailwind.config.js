@@ -11,15 +11,30 @@ export default {
         },
         extend: {
             animation: {
-                'marquee': 'marquee 10s linear infinite',
+                'rotate_full': 'full_circle 7s linear infinite',
+                "move" : "move 2s ease-in-out infinite",
+                'marquee': 'marquee 8s linear infinite',
                 "slide-down": "slide-down 0.8s",
                 "fade-in": "fade-in 0.8s",
                 "open-mobile-menu": "slide-left 0.5s",
             },
             keyframes: {
+                'full_circle': {
+                    '0%': {transform: 'rotate(0)'},
+                    '25%': {transform: 'rotate(90deg)'},
+                    '50%': {transform: 'rotate(180deg)'},
+                    '75%': {transform: 'rotate(270deg)'},
+                    '100%': {transform: 'rotate(360deg)'}
+                },
+                "move": {
+                    '0%, 100%': {transform: 'translate(0, 0)'},
+                    '25%': {transform: 'translate(50px, 0)'},
+                    '50%': {transform: 'translate(50px, 50px)'},
+                    '75%': {transform: 'translate(0, 50px)'},
+                },
                 'marquee': {
-                    '0%': { transform: 'translateX(0)' },
-                    '100%': { transform: 'translateX(-50%)' }
+                    '0%': {transform: 'translateX(0)'},
+                    '100%': {transform: 'translateX(-50%)'}
                 },
                 "slide-left": {
                     "0%": {

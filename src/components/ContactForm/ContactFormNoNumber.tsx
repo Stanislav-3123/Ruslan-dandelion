@@ -7,12 +7,12 @@ const ContactFormNoNumber = () => {
     }, [])
 
     return (
-        <div className="py-8 px-4 flex flex-col w-full bg-white rounded-[30px] gap-12">
+        <div id={"contactForm"} className="py-8 px-4 flex flex-col w-full bg-white rounded-[30px] gap-12">
             <div className="w-full flex flex-row justify-between">
                 <h2>CONTACT FORM</h2>
             </div>
             <h3><span className="blue_span">Fill out this form 
-            </span>and we will contact you shortly.</h3>
+            </span> and we will contact you shortly.</h3>
             <form id={"contactForm"} className="w-full p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
                 <input type="text" placeholder="NAME" className="input"/>
                 <input type="text" placeholder="EMAIL OR PHONE NUMBER" className="input"/>

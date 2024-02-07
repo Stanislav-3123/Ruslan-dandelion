@@ -9,7 +9,7 @@ const Title = () => {
             <p className="px-4">Our company develops software for gambling companies.
                 We create high-quality products that help our clients
                 improve their business and attract more players.</p>
-            <div className="mx-auto bg-cover bg-[url('/images/image/mainCub.png')] w-[280px] h-[280px]"/>
+            <div className="mx-auto bg-cover bg-[url('/images/image/mainCub.png')] animate-rotate_full w-[280px] h-[280px]"/>
             <div className="px-4">
                 <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
                     className="cursor-pointer bg-white bg-opacity-20 rounded-[100px] border border-white flex flex-row p-4 gap-4 w-full">

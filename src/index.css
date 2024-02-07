@@ -99,7 +99,7 @@ h3 {
     @apply text-sky-950 text-2xl sm:text-[32px] font-semibold font-['Roboto'] leading-[38.40px] sm:leading-[51.20px]
 }
 h2 {
-    @apply text-neutral-900 text-lg font-bold font-['Syncopate'] uppercase
+    @apply text-neutral-900 sm:text-2xl text-lg font-bold font-['Syncopate'] uppercase
 }
 h1 {
     @apply w-[328px] text-neutral-900 text-5xl font-bold font-['Syncopate'] uppercase
@@ -108,7 +108,7 @@ h1 {
     @apply text-center text-slate-300 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase
 }
 p {
-    @apply text-zinc-700 text-sm font-normal font-['Roboto'] leading-snug
+    @apply text-neutral-700 text-sm sm:text-base font-normal font-['Roboto'] leading-snug sm:leading-relaxed
 }
 code {
     font-family: sourse-code-pro, Menlo, Monaco, Consolas, 'Courier New',

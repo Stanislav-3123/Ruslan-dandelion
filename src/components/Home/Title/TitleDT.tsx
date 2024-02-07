@@ -30,7 +30,7 @@ const TitleDt = () => {
                 </div>
                 <div className="relative">
                     <div
-                        className="absolute top-[55px] right-[-209px] bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
+                        className="absolute top-[55px] right-[-209px] animate-rotate_full bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
                 </div>
 
                 <div className="fc w-[500px] justify-end gap-8">

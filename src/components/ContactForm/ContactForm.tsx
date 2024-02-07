@@ -12,8 +12,8 @@ const ContactForm = () => {
                 <p className="description_number">(04)</p>
                 <h2>CONTACT FORM</h2>
             </div>
-            <h3><span className="blue_span">Fill out this form 
-            </span>and we will contact you shortly.</h3>
+            <h3><span className="blue_span">Fill out this form
+            </span> and we will contact you shortly.</h3>
             <form id={"contactForm"} className="w-full p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
                 <input type="text" placeholder="NAME" className="input"/>
                 <input type="text" placeholder="EMAIL OR PHONE NUMBER" className="input"/>

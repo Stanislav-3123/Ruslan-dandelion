@@ -3,7 +3,7 @@ import ContactFormNoNumber from "../ContactForm/ContactFormNoNumber.tsx";
 
 const ContactsPage = () => {
     return (
-        <div className="flex flex-col gap-[120px]">
+        <div className="w-full flex flex-col gap-[120px]">
             <div className="w-full px-4 mt-[120px] flex flex-col gap-8">
                 <h2 className="text-neutral-900 text-[32px] font-bold font-['Syncopate']">CONTACTS</h2>
                 <h3>Smart Choice is a modern software company</h3>
