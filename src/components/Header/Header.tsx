@@ -5,7 +5,7 @@ const scrollToTop = () => window.scrollTo({top: 0, behavior: 'smooth'})
 
 const Header = () => {
     return (
-        <header className="mx-auto max-w-[1440px] hidden sm:block bg-blue-100 bg-opacity-60 backdrop-blur-[30px]
+        <header className="mx-auto max-w-[1440px] border border-white hidden sm:block bg-blue-100 bg-opacity-20 backdrop-blur-[30px]
         rounded-[100px] fixed top-0 w-full z-40 px-8 py-4">
             <nav className="flex flex-row items-center w-full justify-between">
                 <div className="flex gap-4">
