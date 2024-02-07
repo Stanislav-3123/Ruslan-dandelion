@@ -6,6 +6,7 @@ import ContactForm from "../ContactForm/ContactForm.tsx";
 import KeyAspects from "./KeyAspects/KeyAspects.tsx";
 import TitleDT from "./Title/TitleDT.tsx";
 import SmartTicker from "../Tickers/SmartTicker.tsx";
+// import Test from "../Test/Test.tsx";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <TitleDT/>
             <SmartTicker/>
             <AboutUs/>
+            {/*<Test/>*/}
             <OurSolutions/>
             <Faq/>
             <ContactForm/>

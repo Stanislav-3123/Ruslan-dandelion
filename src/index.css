@@ -32,10 +32,10 @@
     @apply text-neutral-800 text-sm font-semibold font-['Roboto'] leading-snug
 }
 .police_button {
-    @apply text-slate-300 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-slate-300 justify-center items-center gap-2.5 inline-flex
+    @apply cursor-pointer text-slate-300 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-slate-300 justify-center items-center gap-2.5 inline-flex
 }
 .active-police-button {
-    @apply  text-neutral-900 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-neutral-900 justify-center items-center gap-2.5 inline-flex
+    @apply cursor-pointer text-neutral-900 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-neutral-900 justify-center items-center gap-2.5 inline-flex
 }
 .navbar_link {
     @apply duration-300 hover:text-base hover:underline underline-offset-[10px] p-4 text-neutral-900 text-sm font-normal font-['Roboto'] uppercase

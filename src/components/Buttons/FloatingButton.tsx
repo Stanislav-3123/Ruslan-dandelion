@@ -4,19 +4,11 @@ import {useEffect, useState} from "react";
 export const FloatingButton = () => {
     const [isVisible, setIsVisible] = useState(false);
     useEffect(() => {
-        // const handleScroll = () => {
-        //     setIsVisible(true);
-        // };
-
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 2000);
-
-        // window.addEventListener('scroll', handleScroll);
-
         return () => {
             clearTimeout(timer);
-            // window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 

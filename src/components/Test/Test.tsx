@@ -5,8 +5,8 @@ const Test = () => {
     const [isBlock3Visible, setBlock3Visible] = useState(false);
 
     const handleBlock1MouseEnter = () => {
-        setBlock2Visible(true);
-        setBlock3Visible(true);
+        setBlock2Visible(!isBlock2Visible);
+        setBlock3Visible(!isBlock3Visible);
     };
 
     const handleBlock2MouseEnter = () => {
@@ -20,10 +20,12 @@ const Test = () => {
     };
 
     return (
-        <div className="block_1" onMouseEnter={handleBlock1MouseEnter}>
-            <div className={isBlock2Visible ? "visible" : ""} onMouseEnter={handleBlock2MouseEnter}>
-                <div className={isBlock3Visible ? "visible" : ""} onMouseEnter={handleBlock3MouseEnter}>
-                    {/* Контент блока 3 */}
+        <div className="w-20 h-20 bg-white"
+             onMouseLeave={handleBlock1MouseEnter}
+             onMouseEnter={handleBlock1MouseEnter}>
+            <div className={isBlock2Visible ? "w-6 h-6 bg-black" : "hidden"} onMouseEnter={handleBlock2MouseEnter}>
+                <div className={isBlock3Visible ? "w-6 h-6 bg-black" : "hidden"} onMouseEnter={handleBlock3MouseEnter}>
+
                 </div>
             </div>
         </div>
