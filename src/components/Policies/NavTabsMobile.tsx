@@ -2,7 +2,7 @@ import {Link} from "react-scroll";
 import {useEffect, useState} from "react";
 
 const NavTabsMobile = () => {
-    const [isActiveFirst, setIsActiveFirst] = useState<boolean>(false)
+    const [isActiveFirst, setIsActiveFirst] = useState<boolean>(true)
     const [isActiveSecond, setIsActiveSecond] = useState<boolean>(false)
     const [isActiveThird, setIsActiveThird] = useState<boolean>(false)
     const [isActiveFourth, setIsActiveFourth] = useState<boolean>(false)
