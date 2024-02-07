@@ -8,7 +8,7 @@ const Faq = () => {
             <h3>We have collected the most
                 <span className="blue_span"> frequently asked questions </span>
                 for you. </h3>
-            <div className="py-8 flex flex-col gap-8 border-b-2 border-slate-300">
+            <div className="py-8 flex flex-col gap-8 border-b border-slate-300">
                 <button className="faq_button">purpose</button>
                 <h4>What are the key features of gambling software?</h4>
                 <p>Some key features of gambling software include
@@ -16,7 +16,7 @@ const Faq = () => {
                     high-quality graphics, reliable gameplay, and real-time
                     analytics.</p>
             </div>
-            <div className="py-8 flex flex-col gap-8 border-b-2 border-slate-300">
+            <div className="py-8 flex flex-col gap-8 border-b border-slate-300">
                 <button className="faq_button">key features</button>
                 <h4>What are the key features of gambling software?</h4>
                 <p>Some key features of gambling software include
@@ -24,7 +24,7 @@ const Faq = () => {
                     high-quality graphics, reliable gameplay, and real-time
                     analytics.</p>
             </div>
-            <div className="py-8 flex flex-col gap-8 border-b-2 border-slate-300">
+            <div className="py-8 flex flex-col gap-8 border-b border-slate-300">
                 <button className="faq_button">benefits</button>
                 <h4>What are the key features of gambling software?</h4>
                 <p>Some key features of gambling software include
@@ -32,7 +32,7 @@ const Faq = () => {
                     high-quality graphics, reliable gameplay, and real-time
                     analytics.</p>
             </div>
-            <div className="py-8 flex flex-col gap-8 border-b-2 border-slate-300">
+            <div className="py-8 flex flex-col gap-8 border-b border-slate-300">
                 <button className="faq_button">Challenges</button>
                 <h4>What are the key features of gambling software?</h4>
                 <p>Some key features of gambling software include
@@ -40,7 +40,7 @@ const Faq = () => {
                     high-quality graphics, reliable gameplay, and real-time
                     analytics.</p>
             </div>
-            <div className="py-8 flex flex-col gap-8 border-b-2 border-slate-300">
+            <div className="py-8 flex flex-col gap-8 border-b border-slate-300">
                 <button className="faq_button">future trends</button>
                 <h4>What are the key features of gambling software?</h4>
                 <p>Some key features of gambling software include

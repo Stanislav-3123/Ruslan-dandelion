@@ -8,7 +8,7 @@ const PoliciesPage = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, [])
     return (
-        <div className="mt-[120px] flex flex-col gap-8">
+        <div className="w-full mt-[120px] flex flex-col gap-8">
             <div className="px-4 flex flex-col gap-8">
                 <h2 className="text-neutral-900 text-[32px] font-bold font-['Syncopate']">POLICIES</h2>
                 <h3>Smart Choice is a modern software company</h3>
@@ -27,7 +27,7 @@ const PoliciesPage = () => {
                 </Link>
             </div>
             <NavTabsMobile/>
-            <div className="bg-white rounded-[30px] px-4 py-8 flex flex-col gap-12 w-full">
+            <div className="bg-white rounded-[30px] mb-[120px] px-4 py-8 flex flex-col gap-12 w-full">
                 <div id={"first"} className="flex flex-col gap-8">
                     <h4 className="policies_headers">PRIVACY POLICY</h4>
                     <p>Arcu cras urna dui quam, lectus sapien
@@ -74,7 +74,7 @@ const PoliciesPage = () => {
                         aenean eleifend et habitasse habitasse ornare dapibus amet in ex.
                         Lectus luctus sit dictumst.</p>
                 </div>
-                <div className="flex flex-col gap-8">
+                <div id={"fourth"} className="flex flex-col gap-8">
                     <h4 className=" policies_headers">Luctus libero, nec cursus pellentesque</h4>
                     <ol className="px-4 list-decimal">
                         <li>Adipiscing ipsum sed tempus eleifend justo quam</li>

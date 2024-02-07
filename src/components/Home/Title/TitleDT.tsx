@@ -4,6 +4,7 @@ import {Link} from "react-scroll";
 const TitleDt = () => {
     return (
         <div className="w-full hidden sm:block">
+
             <div className="relative fr justify-between px-8 w-full h-[600px]">
                 <div className="fc w-[500px] h-full justify-between self-end">
                     <div className="fc pt-[100px] gap-8">
@@ -27,15 +28,17 @@ const TitleDt = () => {
                         </button>
                     </Link>
                 </div>
-                <div className="absolute self-center bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
+                <div className="relative">
+                    <div
+                        className="absolute top-[55px] right-[-209px] bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
+                </div>
+
                 <div className="fc w-[500px] justify-end gap-8">
                     <h1 className="text-neutral-900 text-8xl font-bold font-['Syncopate'] uppercase">CHOICE</h1>
                     <p className="pl-[100px] text-zinc-700 text-base font-normal font-['Roboto'] leading-relaxed">Our
                         company
                         develops software for gambling companies. We create high-quality products that help our clients
                         improve their business and attract more players.</p>
-
-
                 </div>
             </div>
         </div>

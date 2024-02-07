@@ -19,7 +19,7 @@ const MobileHeader = () => {
             {
                 isOpen ? <div className="mobile_header">
                         <div onClick={scrollToTop}
-                             className="w-[170.58px] h-4 bg-[url('/images/Smart-choice.svg')] bg-cover"/>
+                             className="w-[170.58px] h-[17px] bg-[url('/images/Smart-choice.svg')] bg-cover"/>
                         <div onClick={() => setIsOpen(false)}
                              className=" w-14 h-14 p-4 rounded-[20px] justify-center items-center flex">
                             <div
@@ -42,7 +42,7 @@ const MobileHeader = () => {
                                         </svg>
                                     </div>
                                     <Link to={'/'} onClick={handleClick}
-                                          className="bg-[url('/images/Smart-choice.svg')] w-[170.58px] h-4 bg-cover flex self-start"/>
+                                          className="bg-[url('/images/Smart-choice.svg')] w-[170.58px] h-[17px] bg-cover flex self-start"/>
                                     <div className="flex flex-col gap-4">
                                         <NavLink onClick={() => setIsOpen(true)}
                                                  to={"/contacts"} className="navbar_link">CONTACTS</NavLink>
@@ -51,7 +51,7 @@ const MobileHeader = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-8">
-                                    <div className="flex flex-col gap-4 py-8 border-t-[2px] border-b border-slate-300">
+                                    <div className="flex flex-col gap-4 py-8 border-t-[2px] border-b-[2px] border-slate-300">
                                         <p className="navbar_p">Dictum elit. Et. Molestie tempus vulputate ultricies.
                                             Dictum. Odio.</p>
                                         <p className="navbar_p">(555) 555-55-55</p>

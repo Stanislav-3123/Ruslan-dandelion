@@ -11,11 +11,16 @@ export default {
         },
         extend: {
             animation: {
+                'marquee': 'marquee 10s linear infinite',
                 "slide-down": "slide-down 0.8s",
                 "fade-in": "fade-in 0.8s",
                 "open-mobile-menu": "slide-left 0.5s",
             },
             keyframes: {
+                'marquee': {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(-50%)' }
+                },
                 "slide-left": {
                     "0%": {
                         transform: "translateX(300px)",

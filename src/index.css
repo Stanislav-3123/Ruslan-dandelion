@@ -4,7 +4,9 @@
 
 
 
-
+.ticker {
+    @apply text-center text-sky-950 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase
+}
 .fr {
     @apply flex flex-row
 }
@@ -28,6 +30,12 @@
 }
 .pp_link {
     @apply text-neutral-800 text-sm font-semibold font-['Roboto'] leading-snug
+}
+.police_button {
+    @apply text-slate-300 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-slate-300 justify-center items-center gap-2.5 inline-flex
+}
+.active-police-button {
+    @apply  text-neutral-900 text-sm font-normal font-['Roboto'] uppercase p-4 rounded-[100px] border border-neutral-900 justify-center items-center gap-2.5 inline-flex
 }
 .navbar_link {
     @apply duration-300 hover:text-base hover:underline underline-offset-[10px] p-4 text-neutral-900 text-sm font-normal font-['Roboto'] uppercase
@@ -73,10 +81,10 @@ body {
 
 }
 .gray_button {
-  @apply  hover:text-light_blue text-white text-sm font-normal font-['Roboto'] uppercase px-4 py-2 bg-white bg-opacity-20 rounded-[100px] border border-white border-opacity-80 justify-center items-center inline-flex
+  @apply  hover:text-light_blue text-white text-sm sm:text-base font-normal font-['Roboto'] uppercase px-4 py-2 sm:py-4 bg-white bg-opacity-20 rounded-[100px] border border-white border-opacity-80 justify-center items-center
 }
 .blue_span {
-    @apply text-light_blue text-2xl font-semibold font-['Roboto'] leading-[38.40px]
+    @apply text-light_blue text-2xl sm:text-[32px] font-semibold font-['Roboto'] leading-[38.40px] sm:leading-[51.20px]
 }
 h5 {
     @apply text-dark_blue text-sm font-semibold font-['Roboto'] leading-snug
@@ -88,7 +96,7 @@ ol {
     @apply text-zinc-700 text-sm font-normal font-['Roboto'] leading-snug
 }
 h3 {
-    @apply text-sky-950 text-2xl font-semibold font-['Roboto'] leading-[38.40px]
+    @apply text-sky-950 text-2xl sm:text-[32px] font-semibold font-['Roboto'] leading-[38.40px] sm:leading-[51.20px]
 }
 h2 {
     @apply text-neutral-900 text-lg font-bold font-['Syncopate'] uppercase
@@ -97,7 +105,7 @@ h1 {
     @apply w-[328px] text-neutral-900 text-5xl font-bold font-['Syncopate'] uppercase
 }
 .description_number {
-    @apply text-center text-slate-300 text-lg font-bold font-['Syncopate'] uppercase
+    @apply text-center text-slate-300 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase
 }
 p {
     @apply text-zinc-700 text-sm font-normal font-['Roboto'] leading-snug
