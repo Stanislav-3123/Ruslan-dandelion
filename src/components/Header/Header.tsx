@@ -1,8 +1,9 @@
-import {NavLink, Link} from "react-router-dom";
-import {WriteToUsButton} from "../Buttons/WriteToUsButton.tsx";
+import {NavLink} from "react-router-dom";
+import {Link} from "react-scroll";
+
+
 
 const scrollToTop = () => window.scrollTo({top: 0, behavior: 'smooth'})
-
 const Header = () => {
     return (
         <header className="mx-auto max-w-[1440px] border border-white hidden sm:block bg-blue-100 bg-opacity-20 backdrop-blur-[30px]
@@ -18,11 +19,12 @@ const Header = () => {
                         POLICIES
                     </NavLink>
                 </div>
-                <Link to={'/'} onClick={scrollToTop}
+                <NavLink to={'/'} onClick={scrollToTop}
                       className="cursor-pointer w-[170.58px] h-4 bg-[url('/images/Smart-choice.svg')] bg-center bg-cover my-3.5"/>
-                <div>
-                    <WriteToUsButton/>
-                </div>
+                <Link to={'contactForm'} offset={-120} smooth={true} duration={900}
+                      className="black_button sm:w-[163px]">
+                    WRITE TO US
+                </Link>
             </nav>
         </header>
     );
