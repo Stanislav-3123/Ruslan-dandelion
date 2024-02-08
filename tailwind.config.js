@@ -17,8 +17,33 @@ export default {
                 "slide-down": "slide-down 0.8s",
                 "fade-in": "fade-in 0.8s",
                 "open-mobile-menu": "slide-left 0.5s",
+                'key-slide-up': 'slide_up 0.5s ease-in-out',
+                'key-appear' : 'key-appear 0.3s ease-in-out',
+                'key-disappear' : 'key-disappear 0.3s ease-in-out',
+                'key-slide-text' : 'key-slide-text 0.3s ease-in-out',
+                'key-slide-down-text' : 'key-slide-down-text 0.3s ease-in-out'
             },
             keyframes: {
+                'key-slide-text' : {
+                    '0%': {opacity: 0, transform: 'translateY(100px)'},
+                    '100%': {opacity: 1, transform: 'translateY(0px)'}
+                },
+                'key-slide-down-text' : {
+                    '0%': {opacity: 1, transform: 'translateY(0px)'},
+                    '100%': {opacity: 0, transform: 'translateY(200px)'}
+                },
+                'key-appear' : {
+                    '0%': {opacity: 1, transform: 'translateY(200px)'},
+                    '100%': {opacity: 1, transform: 'translateY(0px)'}
+                },
+                'key-disappear' : {
+                    '0%': {opacity: 1, transform: 'translateY(-200px)'},
+                    '100%': {opacity: 1, transform: 'translateY(0)'}
+                },
+                'slide_up' : {
+                    '0%': {transform: 'translateY(0)'},
+                    '100%': {transform: 'translateY(-200px)'}
+                },
                 'full_circle': {
                     '0%': {transform: 'rotate(0)'},
                     '25%': {transform: 'rotate(90deg)'},

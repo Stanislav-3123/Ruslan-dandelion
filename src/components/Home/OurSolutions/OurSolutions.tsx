@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
 const OurSolutions = () => {
-    const [isHovered5, setIsHovered5] = useState<boolean>(false)
-    const [isHovered6, setIsHovered6] = useState<boolean>(false)
-    const [isHovered7, setIsHovered7] = useState<boolean>(false)
-    const [isHovered8, setIsHovered8] = useState<boolean>(false)
+    const [isHovered5, setIsHovered5] = useState<boolean>(true)
+    const [isHovered6, setIsHovered6] = useState<boolean>(true)
+    const [isHovered7, setIsHovered7] = useState<boolean>(true)
+    const [isHovered8, setIsHovered8] = useState<boolean>(true)
 
     const handleHover5 = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault()
@@ -90,42 +90,45 @@ const OurSolutions = () => {
                         and boost your gaming revenue</p>
                 </div>
                 <div className="flex sm:w-1/2 flex-col gap-8">
-                    <div className="flex gap-2 sm:justify-between" onMouseEnter={handleHover5}
+                    <div className="flex relative gap-2 sm:justify-between" onMouseEnter={handleHover5}
                          onMouseLeave={onMouseLeave}>
                         <h3 className={isHovered5 ? "sm:self-center duration-300 text-sky-950"
                             : "sm:self-center duration-300 text-slate-300"}>
                             Safe and secure gaming
                         </h3>
                         <div
-                            className={isHovered5 ? "w-16 duration-300 opacity-1 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/slicedCube.png')] bg-cover"
-                                : "w-16 opacity-0 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/slicedCube.png')] bg-cover"}/>
-                    </div><div className="flex gap-2 sm:justify-between" onMouseEnter={handleHover6}
+                            className={isHovered5 ? "w-16 absolute right-[60px] top-[-45px] duration-300 opacity-1 sm:w-36 h-16 sm:h-36 bg-[url('/images/imageForCategories/slicedCube.png')] bg-cover"
+                                : "w-16 opacity-0 absolute right-[60px] top-[-45px] sm:w-28 duration-300 h-16 sm:h-28 bg-[url('/images/imageForCategories/slicedCube.png')] bg-cover"}/>
+                    </div>
+                    <div className="flex relative gap-2 sm:justify-between" onMouseEnter={handleHover6}
                          onMouseLeave={onMouseLeave}>
                         <h3 className={isHovered6 ? "sm:self-center duration-300 text-sky-950"
                             : "sm:self-center duration-300 text-slate-300"}>
-                            Innovative gaming solutions
+                            Safe and secure gaming
                         </h3>
                         <div
-                            className={isHovered6 ? "w-16 duration-300 opacity-1 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/spiral.png')] bg-cover"
-                                : "w-16 opacity-0 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/spiral.png')] bg-cover"}/>
-                    </div><div className="flex gap-2 sm:justify-between" onMouseEnter={handleHover7}
+                            className={isHovered6 ? "w-16 absolute right-[60px] top-[-45px] duration-300 opacity-1 sm:w-36 h-16 sm:h-36 bg-[url('/images/imageForCategories/spiral.png')] bg-cover"
+                                : "w-16 opacity-0 absolute right-[60px] top-[-45px] sm:w-28 duration-300 h-16 sm:h-28 bg-[url('/images/imageForCategories/spiral.png')] bg-cover"}/>
+                    </div>
+                    <div className="flex relative gap-2 sm:justify-between" onMouseEnter={handleHover7}
                          onMouseLeave={onMouseLeave}>
                         <h3 className={isHovered7 ? "sm:self-center duration-300 text-sky-950"
                             : "sm:self-center duration-300 text-slate-300"}>
-                            Improve gaming experience
+                            Safe and secure gaming
                         </h3>
                         <div
-                            className={isHovered7 ? "w-16 duration-300 opacity-1 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/pyramid.png')] bg-cover"
-                                : "w-16 opacity-0 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/pyramid.png')] bg-cover"}/>
-                    </div><div className="flex gap-2 sm:justify-between" onMouseEnter={handleHover8}
+                            className={isHovered7 ? "w-16 absolute right-[50px] top-[-45px] duration-300 opacity-1 sm:w-[150px] h-16 sm:h-[150px] bg-[url('/images/imageForCategories/pyramid.png')] bg-cover"
+                                : "w-16 opacity-0 absolute right-[60px] top-[-45px] sm:w-28 duration-300 h-16 sm:h-28 bg-[url('/images/imageForCategories/pyramid.png')] bg-cover"}/>
+                    </div>
+                    <div className="flex relative gap-2 sm:justify-between" onMouseEnter={handleHover8}
                          onMouseLeave={onMouseLeave}>
                         <h3 className={isHovered8 ? "sm:self-center duration-300 text-sky-950"
                             : "sm:self-center duration-300 text-slate-300"}>
-                            Boost your gaming revenue
+                            Safe and secure gaming
                         </h3>
                         <div
-                            className={isHovered8 ? "w-16 duration-300 opacity-1 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/cone.png')] bg-cover"
-                                : "w-16 opacity-0 sm:w-28 h-16 sm:h-28 bg-[url('/images/imageForCategories/cone.png')] bg-cover"}/>
+                            className={isHovered8 ? "w-16 absolute right-[60px] top-[-45px] duration-300 opacity-1 sm:w-36 h-16 sm:h-36 bg-[url('/images/imageForCategories/cone.png')] bg-cover"
+                                : "w-16 opacity-0 absolute right-[60px] top-[-45px] sm:w-28 duration-300 h-16 sm:h-28 bg-[url('/images/imageForCategories/cone.png')] bg-cover"}/>
                     </div>
                 </div>
             </div>
