@@ -11,7 +11,7 @@ export default {
         },
         extend: {
             animation: {
-                'rotate_full': 'full_circle 7s linear infinite',
+                'rotate_full': 'full_circle 60s linear infinite',
                 "move" : "move 2s ease-in-out infinite",
                 'marquee': 'marquee 8s linear infinite',
                 "slide-down": "slide-down 0.8s",
@@ -21,9 +21,14 @@ export default {
                 'key-appear' : 'key-appear 0.3s ease-in-out',
                 'key-disappear' : 'key-disappear 0.3s ease-in-out',
                 'key-slide-text' : 'key-slide-text 0.3s ease-in-out',
-                'key-slide-down-text' : 'key-slide-down-text 0.3s ease-in-out'
+                'key-slide-down-text' : 'key-slide-down-text 0.3s ease-in-out',
+                'link-hover' : 'link-hover 0.3s ease-in-out',
             },
             keyframes: {
+                'link-hover' : {
+                    '0%': {transform: 'translateY(-10px)'},
+                    '100%': {transform: 'translateY(10px)'}
+                },
                 'key-slide-text' : {
                     '0%': {opacity: 0, transform: 'translateY(100px)'},
                     '100%': {opacity: 1, transform: 'translateY(0px)'}

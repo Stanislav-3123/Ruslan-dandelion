@@ -41,7 +41,8 @@
 }
 
 .footer_link {
-    @apply text-neutral-900 text-sm font-normal font-['Roboto'] py-4
+    @apply text-neutral-900 text-sm font-normal sm:text-base font-['Roboto'] py-4 hover:underline underline-offset-[10px]
+     duration-300 hover:animate-fade-in
 }
 
 .pp_link {
@@ -88,7 +89,7 @@
 }
 
 .header_link {
-    @apply duration-200 hover:underline underline-offset-[10px] sm:text-neutral-900 sm:text-base
+    @apply duration-300 hover:underline underline-offset-[10px] sm:text-neutral-900 sm:text-base sm:hover:animate-link-hover
     sm:font-normal sm:font-['Roboto'] sm:uppercase
 }
 

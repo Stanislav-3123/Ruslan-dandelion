@@ -9,9 +9,11 @@ const Header = () => {
         rounded-[100px] fixed top-0 w-full z-40 px-8 py-4">
             <nav className="flex flex-row items-center w-full justify-between">
                 <div className="flex gap-4">
+                    <div className="">
                     <NavLink to={'/contacts'} onClick={scrollToTop} className="header_link">
                         CONTACTS
                     </NavLink>
+                    </div>
                     <NavLink to={'/policies'} onClick={scrollToTop} className="header_link">
                         POLICIES
                     </NavLink>
