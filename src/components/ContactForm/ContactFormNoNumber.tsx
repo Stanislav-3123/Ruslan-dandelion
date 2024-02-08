@@ -1,40 +1,42 @@
 import {Link} from "react-router-dom";
-import {useEffect} from "react";
 
-const ContactFormNoNumber = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }, [])
+const ContactForm = () => {
 
     return (
-        <div id={"contactForm"} className="py-8 px-4 flex flex-col w-full bg-white rounded-[30px] gap-12">
-            <div className="w-full flex flex-row justify-between">
-                <h2>CONTACT FORM</h2>
+        <div className="py-8 px-4 sm:px-8 flex flex-col sm:flex-row w-full bg-white rounded-[30px] gap-12 sm:gap-8">
+            <div className="fc gap-12 sm:w-1/2 sm:justify-between">
+                <div className="w-full flex flex-row justify-between sm:gap-8 sm:flex-col">
+                    <h2>CONTACT FORM</h2>
+                </div>
+                <h3 className="sm:pr-[152px]"><span className="blue_span">Fill out this form</span> and we will contact
+                    you shortly.</h3>
             </div>
-            <h3><span className="blue_span">Fill out this form 
-            </span> and we will contact you shortly.</h3>
-            <form id={"contactForm"} className="w-full p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
+            <form id={"contactForm"}
+                  className="w-full sm:w-1/2 p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
                 <input type="text" placeholder="NAME" className="input"/>
                 <input type="text" placeholder="EMAIL OR PHONE NUMBER" className="input"/>
                 <textarea placeholder="MESSAGE" className="textarea"></textarea>
-                <div className="flex gap-2 content-center">
-                    <input type="checkbox" className=""/>
-                    <p>I have read and accept the <Link className="pp_link" to={"/policies"}>Privacy Policy</Link></p>
-                </div>
-                <div className="flex flex-row gap-2 self-end">
-                    <h3 className="self-center text-neutral-900 text-base font-bold font-['Roboto'] uppercase">SEND</h3>
-                    <svg
-                        className="w-[50px] h-[50px] rounded-[100px] p-[12px] bg-rose-600 hover:rotate-[-45deg] duration-300"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path fill="#fff" d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8-8 8-1.425-1.4 5.6-5.6Z"/>
-                    </svg>
+                <div className="sm:w-full fc gap-4 sm:flex-row sm:justify-between">
+                    <div className="flex gap-2 content-center">
+                        <input type="checkbox" className="self-center"/>
+                        <p className="self-center">I have read and accept the <Link className="pp_link" to={"/policies"}>Privacy Policy</Link>
+                        </p>
+                    </div>
+                    <div className="flex flex-row gap-2 self-end">
+                        <h3 className="self-center text-neutral-900 sm:text-lg text-base font-bold font-['Roboto'] uppercase">SEND</h3>
+                        <svg
+                            className="w-[50px] h-[50px] rounded-[100px] p-[12px] bg-rose-600 rotate-[-45deg] hover:rotate-[0deg] duration-300"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="#fff" d="M16.175 13H4v-2h12.175l-5.6-5.6L12 4l8 8-8 8-1.425-1.4 5.6-5.6Z"/>
+                        </svg>
+                    </div>
                 </div>
             </form>
         </div>
     );
 };
 
-export default ContactFormNoNumber;
+export default ContactForm;
 
 // import React, {useEffect, useState} from "react";
 // import {Link} from "react-router-dom";

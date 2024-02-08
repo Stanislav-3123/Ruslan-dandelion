@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
 const OurSolutions = () => {
-    const [isHovered5, setIsHovered5] = useState<boolean>(true)
-    const [isHovered6, setIsHovered6] = useState<boolean>(true)
-    const [isHovered7, setIsHovered7] = useState<boolean>(true)
-    const [isHovered8, setIsHovered8] = useState<boolean>(true)
+    const [isHovered5, setIsHovered5] = useState<boolean>(false)
+    const [isHovered6, setIsHovered6] = useState<boolean>(false)
+    const [isHovered7, setIsHovered7] = useState<boolean>(false)
+    const [isHovered8, setIsHovered8] = useState<boolean>(false)
 
     const handleHover5 = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault()

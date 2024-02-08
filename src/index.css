@@ -16,7 +16,7 @@
 }
 
 .policies_headers {
-    @apply text-neutral-900 text-lg font-bold font-['Syncopate'] uppercase
+    @apply text-neutral-900 text-lg sm:text-2xl font-bold font-['Syncopate'] uppercase sm:leading-relaxed
 }
 
 .mobile_header {
@@ -134,7 +134,7 @@ body {
 }
 
 h5 {
-    @apply text-dark_blue text-sm font-semibold font-['Roboto'] leading-snug
+    @apply text-dark_blue text-sm sm:text-base font-semibold font-['Roboto'] leading-snug sm:leading-relaxed
 }
 
 h4 {
