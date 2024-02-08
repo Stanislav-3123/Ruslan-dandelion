@@ -18,8 +18,8 @@ const KeyAspects = () => {
         setIsActive5(false)
     }
     return (
-        <div className="w-full flex flex-col flex-wrap sm:flex-row gap-12 sm:justify-between sm:px-8">
-            <div className="w-full sm:w-1/2 flex flex-wrap sm:justify-between flex-col gap-12">
+        <div className="w-full overflow-y-hidden sm:overflow-y-visible flex flex-col flex-wrap sm:flex-row gap-12 sm:justify-between sm:px-8">
+            <div className="w-full overflow-y-hidden sm:w-1/2 flex flex-wrap sm:justify-between flex-col gap-12">
                 <div className="sm:px-0 px-4 flex sm:gap-8 sm:flex-col flex-row justify-between">
                     <p className="sm:self-start description_number">(05)</p>
                     <h2>KEY ASPECTS</h2>
@@ -35,7 +35,7 @@ const KeyAspects = () => {
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive1 ?
                     <div
-                        className="absolute top-[-200px] animate-key-appear border sm:flex flex-col duration-300 justify-between p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
+                        className="z-[1] absolute top-[-200px] animate-key-appear border sm:flex flex-col duration-300 justify-between p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
                     >
                         <div className="key_number">01</div>
                         <div className="flex flex-col duration-300 gap-8">
@@ -45,7 +45,7 @@ const KeyAspects = () => {
                         </div>
                     </div>
                     : <div
-                        className="z-[5] border absolute animate-key-disappear flex-col duration-300 justify-between sm:flex p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
+                        className="z-[1] border absolute animate-key-disappear flex-col duration-300 justify-between sm:flex p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
                     >
                         <div className="key_number">01</div>
                         <div className="flex flex-col duration-300 gap-8">
@@ -72,7 +72,7 @@ const KeyAspects = () => {
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive2 ?
                     <div
-                        className="absolute top-[-200px] animate-key-appear border sm:flex flex-col duration-300 justify-between p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
+                        className="z-[2] absolute top-[-200px] animate-key-appear border sm:flex flex-col duration-300 justify-between p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
                     >
                         <div className="key_number">01</div>
                         <div className="flex flex-col duration-300 gap-8">
@@ -82,7 +82,7 @@ const KeyAspects = () => {
                         </div>
                     </div>
                     : <div
-                        className="z-10 border absolute animate-key-disappear flex-col duration-300 justify-between sm:flex p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
+                        className="z-[2] border absolute animate-key-disappear flex-col duration-300 justify-between sm:flex p-8 rounded-[30px] h-[300px] w-[260px] bg-light_blue"
                     >
                         <div className="key_number">01</div>
                         <div className="flex flex-col duration-300 gap-8">
@@ -214,10 +214,9 @@ const KeyAspects = () => {
                         mattis et odio. Sed integer ornare odio. Dictumst.
                         Lorem sed vulputate odio. Pulvinar sapie.
                     </p>}
-
             </div>
             <NotesSlider/>
-            <div className="sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
+            <div className="w-full sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
                 <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
                       className="sm:h-[300px] sm:w-[260px] sm:p-8 sm:justify-between cursor-pointer bg-white bg-opacity-20 rounded-[30px] border border-white flex flex-col px-4 py-8 gap-8 w-full">
                     <p className="w-full self-center">Want to write to us? Ask us a question or send your feedback.</p>

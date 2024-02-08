@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="flex flex-col gap-12 px-4 py-8 items-center w-full rounded-t-[30px] bg-white mt-[120px]">
+            <div className="fc gap-12">
             <div className="w-full flex flex-col gap-8">
                 <p
                     className="p_gray">Address
@@ -28,6 +29,7 @@ const Footer = () => {
                     </div>
                 </div>
             </nav>
+            </div>
             <div
                 className="text-center text-blue-100 text-[32px] font-bold font-['Syncopate'] uppercase">smart
                 choice
