@@ -14,6 +14,7 @@ function App() {
 
     return (
         <Wrapper>
+
             <Cookies/>
             <MobileHeader/>
             <FloatingButton/>

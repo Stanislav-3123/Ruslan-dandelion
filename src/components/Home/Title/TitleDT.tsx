@@ -1,8 +1,10 @@
 import {Link} from "react-scroll";
 import SliderTitle from "../../Sliders/SliderTitle.tsx";
+import {useState} from "react";
 
 
 const TitleDt = () => {
+    const [joke, setJoke] = useState<boolean>(false)
     return (
         <div className="w-full hidden sm:block">
             <div className="relative fr justify-between px-8 w-full h-[600px]">
@@ -31,10 +33,15 @@ const TitleDt = () => {
                         </button>
                     </Link>
                 </div>
+
                 <div className="relative animate-mobile_cube_zoom animate-delay-[600ms] animate-fill-backwards">
-                    <div
-                        className="absolute top-[55px] right-[-209px] animate-rotate_full bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
+                    <div onClick={() => setJoke(!joke)}
+                        className={joke ? "w-full h-full animate-hover_joke" : "w-full h-full"}>
+                        <div
+                            className="absolute top-[55px] right-[-209px] animate-rotate_full bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
+                    </div>
                 </div>
+
                 <div className="fc justify-between">
                     <div className="animate-fade-down animate-once animate-duration-500 animate-delay-[600ms] animate-ease-in animate-fill-backwards">
                     <SliderTitle/>
