@@ -80,20 +80,20 @@ const ContactForm = () => {
             </div>
             <form id={"contactForm"}
                   className="w-full sm:w-1/2 p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
-                <input type="text"  value={name} onChange={handleNameChange} placeholder="NAME" className={errorName ? "input_error" : "input" }/>
-                <input type="text" value={email} onChange={handleEmailChange} placeholder="EMAIL OR PHONE NUMBER" className={errorEmail ? "input_error" : "input" }/>
-                <textarea placeholder="MESSAGE" onChange={handleMessageChange} value={message} className={errorMessage ? "textarea_error" : "textarea" }></textarea>
+                <input type="text"  name="name" value={name} onChange={handleNameChange} placeholder="NAME" className={errorName ? "input_error" : "input" }/>
+                <input type="text"  name="email" value={email} onChange={handleEmailChange} placeholder="EMAIL OR PHONE NUMBER" className={errorEmail ? "input_error" : "input" }/>
+                <textarea placeholder="MESSAGE"  name="message" onChange={handleMessageChange} value={message} className={errorMessage ? "textarea_error" : "textarea" }></textarea>
                 <div className="sm:w-full fc gap-4 sm:flex-row sm:justify-between">
                     <div className="flex gap-2 content-center">
-                        <input type="checkbox" onChange={() => {
+                        <input type="checkbox"  name="checkbox" onChange={() => {
                             setChecked(!checked)
                             setCheckboxError(true)
                         }} checked={checked} className="self-center"/>
                         <p className={checkboxError ? "self-center" : "self-center red_underline"}>
                             I have read and accept the
                             <Link className={checkboxError ? "pp_link " : "pp_link red_underline"} to={"/policies"}> Privacy Policy</Link>
-                            {checkboxError ? null
-                             : <span className="required_title">title is required</span >}
+                            {/*{checkboxError ? null*/}
+                            {/* : <span className="required_title">title is required</span >}*/}
                         </p>
                     </div>
                     <div onClick={sendEmail} className="flex flex-row gap-2 self-end">

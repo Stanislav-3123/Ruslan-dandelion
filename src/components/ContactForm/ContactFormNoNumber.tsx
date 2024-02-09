@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import Modal from "../Modal/Modal.tsx";
-import {useState} from "react";
+import React, {useState} from "react";
 
 const ContactForm = () => {
 

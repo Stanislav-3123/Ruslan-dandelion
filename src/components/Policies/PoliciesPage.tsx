@@ -9,7 +9,7 @@ const PoliciesPage = () => {
         window.scrollTo({top: 0, behavior: "smooth"});
     }, [])
     return (
-        <div className="w-full sm:mt-[160px] mt-[120px] flex flex-col gap-8 sm:gap-16">
+        <div className="overflow-y-hidden w-full sm:mt-[160px] mt-[120px] flex flex-col gap-8 sm:gap-16">
             <div className="sm:p-8 px-4 flex flex-col  sm:flex-row gap-8">
                 <div className="flex sm:w-1/2 flex-col gap-8">
                     <h2 className="text-neutral-900 text-[32px] font-bold font-['Syncopate']">POLICIES</h2>

@@ -19,7 +19,7 @@ const MobileHeader = () => {
             {
                 isOpen ? <div className="mobile_header">
                         <div onClick={scrollToTop}
-                             className="w-[170.58px] h-[17px] bg-[url('/images/Smart-choice.svg')] bg-cover"/>
+                             className="ml-4 w-[170.58px] h-[17px] bg-[url('/images/Smart-choice.svg')] bg-cover"/>
                         <div onClick={() => setIsOpen(false)}
                              className=" w-14 h-14 p-4 rounded-[20px] justify-center items-center flex">
                             <div

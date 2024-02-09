@@ -10,7 +10,7 @@ import SmartTicker from "../Tickers/SmartTicker.tsx";
 
 const Home = () => {
     return (
-        <div className="pt-[120px] inline-flex flex-col gap-[120px] justify-start items-center w-full">
+        <div className="overflow-y-hidden pt-[120px] inline-flex flex-col gap-[120px] justify-start items-center w-full">
             <Title/>
             <TitleDT/>
             <SmartTicker/>

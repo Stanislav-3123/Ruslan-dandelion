@@ -1,4 +1,5 @@
 import {Link} from "react-scroll";
+import SliderTitle from "../../Sliders/SliderTitle.tsx";
 
 
 const TitleDt = () => {
@@ -32,13 +33,15 @@ const TitleDt = () => {
                     <div
                         className="absolute top-[55px] right-[-209px] animate-rotate_full bg-cover bg-[url('/images/image/mainCub.png')] w-[434px] h-[434px] z-30"/>
                 </div>
-
+                <div className="fc justify-between">
+            <SliderTitle/>
                 <div className="fc w-[500px] justify-end gap-8">
                     <h1 className="text-neutral-900 text-8xl font-bold font-['Syncopate'] uppercase">CHOICE</h1>
                     <p className="pl-[100px] text-zinc-700 text-base font-normal font-['Roboto'] leading-relaxed">Our
                         company
                         develops software for gambling companies. We create high-quality products that help our clients
                         improve their business and attract more players.</p>
+                </div>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import ContactFormNoNumber from "../ContactForm/ContactFormNoNumber.tsx";
 
 const ContactsPage = () => {
     return (
-        <div className=" w-full sm:px-8 flex flex-col gap-[120px]">
+        <div className="overflow-y-hidden w-full sm:px-8 flex flex-col gap-[120px]">
             <div className="relative w-full px-4 sm:mt-[160px] mt-[120px] flex flex-col sm:flex-row gap-8">
                 <div className="flex sm:w-1/2 flex-col gap-8">
                     <h2 className="text-neutral-900 text-[32px] sm:text-[64px] font-bold font-['Syncopate']">CONTACTS</h2>

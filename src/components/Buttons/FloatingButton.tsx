@@ -23,7 +23,7 @@ export const FloatingButton = () => {
 
     return (
         <Link onClick={handleClick} to={'contactForm'} offset={-180} smooth={true} duration={900}
-              className={isVisible ? "floating_button" : "hidden"}>
+              className={isVisible ? "floating_button" : "floating_button hidden"}>
             WRITE TO US
         </Link>
     )
