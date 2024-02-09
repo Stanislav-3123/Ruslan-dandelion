@@ -101,7 +101,7 @@ const ContactForm = () => {
                         <input type="checkbox" name="checkbox" onChange={() => {
                             setChecked(!checked)
                             setCheckboxError(true)
-                        }} checked={checked} className="self-center"/>
+                        }} checked={checked} className="self-center accent-blue-100"/>
                         <p className={checkboxError ? "self-center" : "self-center red_underline"}>
                             I have read and accept the
                             <Link className={checkboxError ? "pp_link " : "pp_link red_underline"}
