@@ -47,5 +47,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// text-center text-blue-100 text-[110px] font-bold font-['Syncopate'] uppercase

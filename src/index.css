@@ -23,12 +23,20 @@
     @apply sm:hidden bg-blue-100 w-full fixed top-0 h-14 pl-4 rounded-b-[20px]
     shadow-lg justify-between items-center inline-flex z-40
 }
-
+.required_title {
+    @apply pl-4 text-xl font-bold text-rose-600 font-['Roboto']
+}
 .input {
     @apply text-base font-normal font-['Roboto']
     py-4 w-full bg-blue-100 border-b border-slate-300
     focus:placeholder:text-slate-400 outline-0 focus:placeholder:pl-4
     sm:placeholder:hover:text-zinc-700
+}
+.input_error {
+    @apply text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300
+    focus:placeholder:text-slate-400 outline-0 focus:placeholder:pl-4
+    sm:placeholder:hover:text-rose-600 placeholder-rose-600
 }
 
 .textarea {
@@ -36,15 +44,22 @@
     py-4 w-full bg-blue-100 border-b border-slate-300  focus:placeholder:text-slate-400
     outline-0 focus:placeholder:pl-4 h-40 sm:h-[128px] resize-none
 }
+.textarea_error {
+    @apply sm:placeholder:hover:text-rose-600 text-base font-normal font-['Roboto']
+    py-4 w-full bg-blue-100 border-b border-slate-300  focus:placeholder:text-slate-400
+    outline-0 focus:placeholder:pl-4 h-40 sm:h-[128px] resize-none placeholder-rose-600
+}
 .key_number {
     @apply text-slate-300 text-lg font-bold font-['Syncopate'] uppercase
 }
 
 .footer_link {
     @apply text-neutral-900 text-sm font-normal sm:text-base font-['Roboto'] py-4 hover:underline underline-offset-[10px]
-     duration-300 hover:animate-fade-in
+     duration-300 hover:font-bold
 }
-
+.red_underline {
+    @apply underline decoration-rose-600 underline-offset-[10px]
+}
 .pp_link {
     @apply text-neutral-800 text-sm font-semibold font-['Roboto'] leading-snug sm:text-base sm:text-neutral-900
 }
@@ -90,7 +105,7 @@
 
 .header_link {
     @apply duration-300 hover:underline underline-offset-[10px] sm:text-neutral-900 sm:text-base sm:hover:animate-link-hover
-    sm:font-normal sm:font-['Roboto'] sm:uppercase
+    sm:font-normal sm:font-['Roboto'] sm:uppercase hover:font-bold
 }
 
 .faq_button {

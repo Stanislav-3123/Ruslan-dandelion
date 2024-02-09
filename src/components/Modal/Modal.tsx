@@ -1,28 +1,27 @@
 const Modal = ({onClose}: { onClose: () => void }) => {
     return (
-        <div className="fixed inset-0 flex flex-col items-center justify-center z-30 bg-black bg-opacity-40">
-            <div data-aos="zoom-in"
-                className="absolute mb:relative bottom-0 w-full inline-flex flex-row mb:gap mb:justify-center mb:gap-4">
-                <div className="w-full mb:w-[657px] mb:h-[335px] h-[235px] mb:p-8 p-4 bg-white rounded-t-[40px] mb:rounded-[40px] inline-flex flex-col items-center mb:gap-8 gap-4">
-                    <h3 className="w-[328px] mb:w-[593px] text-center text-stone mb:text-8xl text-5xl font-bold">Thank you</h3>
-                    <p className="w-[328px] mb:w-[593px] text-center text-neutral-800 text-base mb:text-lg font-normal font-['Inter'] mb:leading-[28.80px] leading-relaxed">Your form has been successfully submitted. We will contact you soon.</p>
-                    <button
-                        onClick={onClose}
-                        className="hover:bg-stone w-[328px] mb:w-full h-[70px] px-[69px] py-6 bg-rose rounded-[20px] justify-center items-center gap-2.5 inline-flex">
-                        <span className="text-white text-sm mb:text-xl mb:leading-loose font-bold leading-snug">Thanks</span>
-                    </button>
-                </div>
-                <button
-                    onClick={onClose}
-                    className="hidden mb:flex">
-                    <div className="hover:fill-rose w-[62px] h-[62px] bg-white rounded-[20px] justify-center items-center inline-flex">
-                        <svg className=""
-                            xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                        </svg>
+        <div className="fixed  w-full inset-0 flex flex-col items-center justify-center z-30 bg-black bg-opacity-40">
+            <div className="absolute sm:static sm:w-[480px] w-full bottom-0 py-8 px-4 fc gap-8 bg-white sm:rounded-[30px] rounded-t-[30px]">
+                <div className="relative w-full  fc gap-8">
+                    <div className="fr justify-center relative">
+                        <h3>THANK YOU</h3>
+                        <div onClick={onClose}
+                            className="sm:cursor-pointer w-[50px] h-[50px] absolute right-[-8px] bottom-3 p-[13px] bg-blue-100 rounded-[100px]">
+                            <svg className={"duration-200 rotate-45"}
+                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                 viewBox="0 0 24 24">
+                                <path fill="#181717" d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2v-6Z"/>
+                            </svg>
+                        </div>
                     </div>
-                </button>
+                    <div className="self-center fc">
+                        <p className="self-center text-zinc-700 text-base font-normal font-['Roboto'] leading-relaxed">Your
+                            form has been successfully submitted!</p>
+                        <span
+                            className="self-center text-light_blue text-base font-normal font-['Roboto'] leading-relaxed">We will contact you shortly!</span>
+                    </div>
+                    <button onClick={onClose} className="black_button">OKAY</button>
+                </div>
             </div>
         </div>
     );
