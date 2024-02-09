@@ -47,7 +47,8 @@ const NavTabsMobile = () => {
 
     return (
         <>{isVisibleNavTabs ? <div
-                className="w-full shadow-lg self-stretch sticky top-[64px] sm:hidden z-20 overflow-y-hidden h-[89px] whitespace-nowrap p-4 bg-white rounded-[20px] justify-start items-start gap-4 inline-flex">
+                className="animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[900ms] animate-ease-in
+                w-full shadow-lg self-stretch sticky top-[64px] sm:hidden z-20 overflow-y-hidden h-[89px] whitespace-nowrap p-4 bg-white rounded-[20px] justify-start items-start gap-4 inline-flex">
                 <div
                     className={isActiveFirst ? "active-police-button" : "police_button"}>
                     <Link to={'first'} offset={-180} smooth={true}

@@ -6,7 +6,7 @@ const Cookies: FC = () => {
     const [agreed, setAgreed] = useLocalStorage('agreedCookies', false)
     const [classes, setClasses] = useState("")
     useEffect(() => {
-        setClasses(classNames({ ["hidden"]: agreed, ["z-[40] sm:px-8 sm:w-[900px] sm:h-28 sm:rounded-[40px] sm:bottom-[10px] sm:flex-row  \n" +
+        setClasses(classNames({ ["hidden"]: agreed, ["animate-fade-up animate-once animate-duration-500 animate-delay-[3000ms] animate-ease-linear animate-fill-backwards z-[40] sm:px-8 sm:w-[900px] sm:h-28 sm:rounded-[40px] sm:bottom-[10px] sm:flex-row  \n" +
             "h-[175px] m-4 sm:m-0 p-4 sm:p-8 bg-white rounded-[40px] flex-col \n" +
             "justify-center items-center gap-4 flex fixed bottom-0"]: !agreed }))
     }, [agreed])

@@ -1,8 +1,16 @@
 import NotesSlider from "../../Sliders/NotesSlider.tsx";
 import {Link} from "react-scroll";
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const KeyAspects = () => {
+    useEffect(() => {
+        AOS.init({
+            disable: false,
+            once: true,
+        });
+    }, []);
 
     const [isActive1, setIsActive1] = useState<boolean>(false)
     const [isActive2, setIsActive2] = useState<boolean>(false)
@@ -18,13 +26,17 @@ const KeyAspects = () => {
         setIsActive5(false)
     }
     return (
-        <div className="w-full overflow-y-hidden sm:overflow-y-visible flex flex-col flex-wrap sm:flex-row gap-12 sm:justify-between sm:px-8">
+        <div
+            className="w-full overflow-y-hidden sm:overflow-y-visible flex flex-col flex-wrap sm:flex-row gap-12 sm:justify-between sm:px-8">
             <div className="w-full overflow-y-hidden sm:w-1/2 flex flex-wrap sm:justify-between flex-col gap-12">
                 <div className="sm:px-0 px-4 flex sm:gap-8 sm:flex-col flex-row justify-between">
-                    <p className="sm:self-start description_number">(05)</p>
-                    <h2>KEY ASPECTS</h2>
+                    <p data-aos="fade-right" data-aos-duration="500"
+                       className="sm:self-start description_number">(05)</p>
+                    <h2 data-aos="fade-left" data-aos-duration="500"
+                    >KEY ASPECTS</h2>
                 </div>
-                <p className="px-4 sm:px-0 sm:pr-[152px] ">Our software solutions provide a safe and secure gaming
+                <p data-aos="flip-up" data-aos-duration="500"
+                    className="px-4 sm:px-0 sm:pr-[152px] ">Our software solutions provide a safe and secure gaming
                     environment,
                     user-friendly interface, high-quality graphics, reliable gameplay,
                     and real-time analytics, ensuring an enhanced gaming experience and
@@ -216,7 +228,8 @@ const KeyAspects = () => {
                     </p>}
             </div>
             <NotesSlider/>
-            <div className="w-full sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
+            <div data-aos="flip-up" data-aos-duration="500"
+                className="w-full sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
                 <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
                       className="sm:h-[300px] sm:w-[260px] sm:p-8 sm:justify-between cursor-pointer bg-white bg-opacity-20 rounded-[30px] border border-white flex flex-col px-4 py-8 gap-8 w-full">
                     <p className="w-full self-center">Want to write to us? Ask us a question or send your feedback.</p>

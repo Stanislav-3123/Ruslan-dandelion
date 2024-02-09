@@ -9,15 +9,17 @@ const PoliciesPage = () => {
         window.scrollTo({top: 0, behavior: "smooth"});
     }, [])
     return (
-        <div className="overflow-y-hidden w-full sm:mt-[160px] mt-[120px] flex flex-col gap-8 sm:gap-16">
+        <div className="w-full sm:mt-[160px] mt-[120px] flex flex-col gap-8 sm:gap-16">
             <div className="sm:p-8 px-4 flex flex-col  sm:flex-row gap-8">
                 <div className="flex sm:w-1/2 flex-col gap-8">
-                    <h2 className="text-neutral-900 text-[32px] font-bold font-['Syncopate']">POLICIES</h2>
-                    <h3 className="sm:pr-[152px]">Smart Choice is a modern software company</h3>
+                    <h2 className="animate-jump-in animate-once animate-duration-300 animate-delay-0 animate-ease-in
+                    text-neutral-900 text-[32px] font-bold font-['Syncopate']">POLICIES</h2>
+                    <h3 className="sm:pr-[152px] animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[300ms] animate-ease-in">Smart Choice is a modern software company</h3>
                 </div>
                 <div className="sm:w-1/2 justify-end self-end flex">
                     <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
-                          className="sm:w-[400px] cursor-pointer bg-white bg-opacity-20 rounded-[100px] border border-white flex flex-row p-4 sm:px-8 gap-4 w-full">
+                          className="animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[600ms] animate-ease-in
+                          sm:w-[400px] cursor-pointer bg-white bg-opacity-20 rounded-[100px] border border-white flex flex-row p-4 sm:px-8 gap-4 w-full">
                         <p className="w-full self-center">Do you want to collaborate with us?</p>
                         <button className="w-[200px] flex flex-row gap-2 whitespace-nowrap">
                             <h3 className="self-center text-neutral-900 text-base font-bold font-['Roboto'] uppercase">let's
@@ -33,7 +35,8 @@ const PoliciesPage = () => {
                 </div>
             </div>
             <NavTabsMobile/>
-            <div className="bg-white sm:justify-between rounded-[30px] mb-[120px] px-4 py-8 sm:p-8 flex flex-col sm:flex-row gap-12 w-full">
+            <div className="animate-fade-up animate-once animate-duration-500 animate-delay-[700ms] animate-ease-in animate-fill-backwards
+            bg-white sm:justify-between rounded-[30px] mb-[120px] px-4 py-8 sm:p-8 flex flex-col sm:flex-row gap-12 w-full">
                 <div className="flex flex-col gap-12 sm:justify-between w-full sm:w-[560px]">
                     <div id={"first"} className="flex flex-col gap-8">
                         <h4 className="policies_headers">PRIVACY POLICY</h4>

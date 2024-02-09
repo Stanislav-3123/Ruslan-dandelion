@@ -1,8 +1,16 @@
 import {Link} from "react-router-dom";
 import Modal from "../Modal/Modal.tsx";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactForm = () => {
+    useEffect(() => {
+        AOS.init({
+            disable: false,
+            once: true,
+        });
+    }, []);
 
     const [isOpen, setIsOpen] = useState(false);
     const handleOpen = () => {
@@ -69,34 +77,40 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="py-8 px-4 sm:px-8 flex flex-col sm:flex-row w-full bg-white rounded-[30px] gap-12 sm:gap-8">
+        <div data-aos="fade-up" data-aos-duration="500"
+             className="py-8 px-4 sm:px-8 flex flex-col sm:flex-row w-full bg-white rounded-[30px] gap-12 sm:gap-8">
             <div className="fc gap-12 sm:w-1/2 sm:justify-between">
                 <div className="w-full flex flex-row justify-between sm:gap-8 sm:flex-col">
-
-                    <h2>CONTACT FORM</h2>
+                    <h2 data-aos="fade-right" data-aos-duration="500"
+                    >CONTACT FORM</h2>
                 </div>
-                <h3 className="sm:pr-[152px]"><span className="blue_span">Fill out this form</span> and we will contact
+                <h3 data-aos="flip-up" data-aos-duration="500"
+                    className="sm:pr-[152px]"><span className="blue_span">Fill out this form</span> and we will contact
                     you shortly.</h3>
             </div>
-            <form id={"contactForm"}
+            <form id={"contactForm"} data-aos="zoom-in" data-aos-duration="500"
                   className="w-full sm:w-1/2 p-4 bg-blue-100 rounded-[20px] flex-col justify-start items-start gap-4 inline-flex">
-                <input type="text"  value={name} onChange={handleNameChange} placeholder="NAME" className={errorName ? "input_error" : "input" }/>
-                <input type="text" value={email} onChange={handleEmailChange} placeholder="EMAIL OR PHONE NUMBER" className={errorEmail ? "input_error" : "input" }/>
-                <textarea placeholder="MESSAGE" onChange={handleMessageChange} value={message} className={errorMessage ? "textarea_error" : "textarea" }></textarea>
-                <div className="sm:w-full fc gap-4 sm:flex-row sm:justify-between">
+                <input type="text" name="name" value={name} onChange={handleNameChange} placeholder="NAME"
+                       className={errorName ? "input_error" : "input"}/>
+                <input type="text" name="email" value={email} onChange={handleEmailChange}
+                       placeholder="EMAIL OR PHONE NUMBER" className={errorEmail ? "input_error" : "input"}/>
+                <textarea placeholder="MESSAGE" name="message" onChange={handleMessageChange} value={message}
+                          className={errorMessage ? "textarea_error" : "textarea"}></textarea>
+                <div className="sm:w-full w-full fc gap-4 sm:flex-row sm:justify-between">
                     <div className="flex gap-2 content-center">
-                        <input type="checkbox" onChange={() => {
+                        <input type="checkbox" name="checkbox" onChange={() => {
                             setChecked(!checked)
                             setCheckboxError(true)
                         }} checked={checked} className="self-center"/>
                         <p className={checkboxError ? "self-center" : "self-center red_underline"}>
                             I have read and accept the
-                            <Link className={checkboxError ? "pp_link " : "pp_link red_underline"} to={"/policies"}> Privacy Policy</Link>
-                            {checkboxError ? null
-                                : <span className="required_title">title is required</span >}
+                            <Link className={checkboxError ? "pp_link " : "pp_link red_underline"}
+                                  to={"/policies"}> Privacy Policy</Link>
+                            {/*{checkboxError ? null*/}
+                            {/* : <span className="required_title">title is required</span >}*/}
                         </p>
                     </div>
-                    <div onClick={sendEmail} className="flex flex-row gap-2 self-end">
+                    <div onClick={sendEmail} className="flex justify-end flex-row gap-2 self-end w-full">
                         <h3 className="self-center text-neutral-900 sm:text-lg text-base font-bold font-['Roboto'] uppercase">SEND</h3>
                         <svg
                             className="w-[50px] h-[50px] rounded-[100px] p-[12px] bg-rose-600 rotate-[-45deg] hover:rotate-[0deg] duration-300"

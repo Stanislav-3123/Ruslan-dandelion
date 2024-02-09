@@ -1,7 +1,8 @@
 const Modal = ({onClose}: { onClose: () => void }) => {
     return (
-        <div className="fixed  w-full inset-0 flex flex-col items-center justify-center z-30 bg-black bg-opacity-40">
-            <div className="absolute sm:static sm:w-[480px] w-full bottom-0 py-8 px-4 fc gap-8 bg-white sm:rounded-[30px] rounded-t-[30px]">
+        <div className="absolute w-full inset-0 flex flex-col items-center justify-center z-30 bg-black bg-opacity-40">
+            <div className="animate-ping animate-once animate-duration-500 animate-delay-0 animate-ease-linear animate-reverse animate-fill-backwards
+            absolute sm:static sm:w-[480px] w-full bottom-0 py-8 px-4 fc gap-8 bg-white sm:rounded-[30px] rounded-t-[30px]">
                 <div className="relative w-full  fc gap-8">
                     <div className="fr justify-center relative">
                         <h3>THANK YOU</h3>

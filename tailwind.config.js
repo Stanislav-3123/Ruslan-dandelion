@@ -23,8 +23,21 @@ export default {
                 'key-slide-text' : 'key-slide-text 0.3s ease-in-out',
                 'key-slide-down-text' : 'key-slide-down-text 0.3s ease-in-out',
                 'link-hover' : 'link-hover 0.3s ease-in-out',
+                'mobile_cube_zoom' : 'mobile_cube_zoom 0.9s ease-in-out',
+                'hover_joke' : 'joke 1s linear infinite'
             },
             keyframes: {
+                'joke' : {
+                    '0%': {transform: 'translateY(-25px) translateX(-25px)'},
+                    '25%': {transform: 'translateY(-30px) translateX(-30px)'},
+                    '50%': {transform: 'translateY(-60px) translateX(-60px)'},
+                    '75%': {transform: 'translateY(-70px) translateX(-70px)'},
+                    '100%': {transform: 'translateY(-100px) translateX(-100px)'},
+                },
+                'mobile_cube_zoom' : {
+                    '0%': {transform: 'rotate(0)', scale: 0},
+                    '100%': {transform: 'rotate(360deg)', scale: 100}
+                },
                 'link-hover' : {
                     '0%': {transform: 'translateY(-10px)'},
                     '100%': {transform: 'translateY(10px)'}

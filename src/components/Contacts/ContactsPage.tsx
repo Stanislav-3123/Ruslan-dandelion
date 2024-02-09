@@ -1,25 +1,41 @@
 import {Link} from "react-scroll";
 import ContactFormNoNumber from "../ContactForm/ContactFormNoNumber.tsx";
+import {useEffect} from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const ContactsPage = () => {
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }, [])
+    useEffect(() => {
+        AOS.init({
+            disable: false,
+            once: true,
+        });
+    }, []);
     return (
         <div className="overflow-y-hidden w-full sm:px-8 flex flex-col gap-[120px]">
             <div className="relative w-full px-4 sm:mt-[160px] mt-[120px] flex flex-col sm:flex-row gap-8">
                 <div className="flex sm:w-1/2 flex-col gap-8">
-                    <h2 className="text-neutral-900 text-[32px] sm:text-[64px] font-bold font-['Syncopate']">CONTACTS</h2>
-                    <h3>Smart Choice is a modern software company</h3>
+                    <h2 className="animate-jump-in animate-once animate-duration-300 animate-delay-0 animate-ease-in
+                    text-neutral-900 text-[32px] sm:text-[64px] font-bold font-['Syncopate']">CONTACTS</h2>
+                    <h3 className="animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[300ms] animate-ease-in">Smart
+                        Choice is a modern software company</h3>
                 </div>
                 <div className="sm:w-1/2">
                     <div className="flex flex-col">
-                        <div className="flex-col flex py-8 gap-8 sm:justify-between border-b-2 sm:flex-row border-slate-300">
+                        <div
+                            className="animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[600ms] animate-ease-in
+                            flex-col flex py-8 gap-8 sm:justify-between border-b-2 sm:flex-row border-slate-300">
                             <div className="fc gap-8">
                                 <button className="faq_button">WRITE US</button>
-                                <h4>Email adress</h4>
+                                <h4>Email address</h4>
                             </div>
                             <p className=" sm:self-end">support@smartchoice.com</p>
                         </div>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[900ms] animate-ease-in">
                         <div
                             className="flex-col flex py-8 gap-8 sm:justify-between border-b-2 sm:flex-row border-slate-300">
                             <div className="fc gap-8">
@@ -29,7 +45,7 @@ const ContactsPage = () => {
                             <p className="sm:self-end">+80000000</p>
                         </div>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col animate-fade animate-fill-backwards animate-once animate-duration-300 animate-delay-[1200ms] animate-ease-in">
                         <div
                             className="flex-col flex py-8 gap-8 sm:justify-between border-b-2 sm:flex-row border-slate-300">
                             <div className="fc gap-8">
@@ -42,7 +58,8 @@ const ContactsPage = () => {
                     </div>
                 </div>
 
-                <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
+                <Link data-aos="zoom-in-up" data-aos-duration="500"
+                    to={"contactForm"} offset={-190} smooth={true} duration={900}
                       className="sm:absolute sm:w-[400px]  bottom-0 cursor-pointer bg-white bg-opacity-20 rounded-[100px] border border-white flex flex-row p-4 sm:px-8 gap-4 w-full">
                     <p className="w-full self-center">Do you want to collaborate with us?</p>
                     <button className="w-[200px] flex flex-row gap-2 whitespace-nowrap">

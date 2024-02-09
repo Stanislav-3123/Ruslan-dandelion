@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
                 <NavLink to={'/'} onClick={scrollToTop}
                       className="cursor-pointer w-[170.58px] h-4 bg-[url('/images/Smart-choice.svg')] bg-center bg-cover my-3.5"/>
-                <Link to={'contactForm'} offset={-120} smooth={true} duration={900}
+                <Link to={'contactForm'} offset={-320} smooth={true} duration={900}
                       className="black_button sm:w-[163px]">
                     WRITE TO US
                 </Link>

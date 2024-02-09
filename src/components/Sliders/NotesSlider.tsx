@@ -1,13 +1,22 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const NotesSlider = () => {
+
+        useEffect(() => {
+            AOS.init({
+                disable: false,
+                once: true,
+            });
+        }, []);
     const [isActive1, setIsActive1] = useState<boolean>(true)
     const [isActive2, setIsActive2] = useState<boolean>(true)
     const [isActive3, setIsActive3] = useState<boolean>(true)
     const [isActive4, setIsActive4] = useState<boolean>(true)
     const [isActive5, setIsActive5] = useState<boolean>(true)
     return (
-        <div
+        <div data-aos="fade-left" data-aos-duration="500"
             className="sm:hidden h-[320px] justify-start items-start inline-flex overflow-y-hidden w-full">
             <div className="flex flex-row gap-4 px-4">
                 <div onClick={() => setIsActive1(!isActive1)}
