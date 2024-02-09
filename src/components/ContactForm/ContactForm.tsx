@@ -98,7 +98,7 @@ const ContactForm = () => {
                        placeholder="EMAIL OR PHONE NUMBER" className={errorEmail ? "input_error" : "input"}/>
                 <textarea placeholder="MESSAGE" name="message" onChange={handleMessageChange} value={message}
                           className={errorMessage ? "textarea_error" : "textarea"}></textarea>
-                <div className="sm:w-full fc gap-4 sm:flex-row sm:justify-between">
+                <div className="sm:w-full w-full fc gap-4 sm:flex-row sm:justify-between">
                     <div className="flex gap-2 content-center">
                         <input type="checkbox" name="checkbox" onChange={() => {
                             setChecked(!checked)

@@ -36,14 +36,14 @@ const KeyAspects = () => {
                     >KEY ASPECTS</h2>
                 </div>
                 <p data-aos="flip-up" data-aos-duration="500"
-                    className="px-4 sm:px-0 sm:pr-[152px] ">Our software solutions provide a safe and secure gaming
+                   className="px-4 sm:px-0 sm:pr-[152px] ">Our software solutions provide a safe and secure gaming
                     environment,
                     user-friendly interface, high-quality graphics, reliable gameplay,
                     and real-time analytics, ensuring an enhanced gaming experience and
                     optimized gaming experiences for players.
                 </p>
             </div>
-            <div onMouseEnter={() => setIsActive1(true)} onMouseLeave={onMouseLeave}
+            <div onMouseEnter={() => setIsActive1(true)} onMouseLeave={onMouseLeave} data-aos="zoom-in"
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive1 ?
                     <div
@@ -80,7 +80,7 @@ const KeyAspects = () => {
                     </p>}
 
             </div>
-            <div onMouseEnter={() => setIsActive2(true)} onMouseLeave={onMouseLeave}
+            <div onMouseEnter={() => setIsActive2(true)} onMouseLeave={onMouseLeave} data-aos="zoom-in" data-aos-delay="300"
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive2 ?
                     <div
@@ -117,7 +117,7 @@ const KeyAspects = () => {
                     </p>}
 
             </div>
-            <div onMouseEnter={() => setIsActive3(true)} onMouseLeave={onMouseLeave}
+            <div onMouseEnter={() => setIsActive3(true)} onMouseLeave={onMouseLeave} data-aos="zoom-in"
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive3 ?
                     <div
@@ -154,7 +154,7 @@ const KeyAspects = () => {
                     </p>}
 
             </div>
-            <div onMouseEnter={() => setIsActive4(true)} onMouseLeave={onMouseLeave}
+            <div onMouseEnter={() => setIsActive4(true)} onMouseLeave={onMouseLeave} data-aos="zoom-in" data-aos-delay="300"
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive4 ?
                     <div
@@ -191,7 +191,7 @@ const KeyAspects = () => {
                     </p>}
 
             </div>
-            <div onMouseEnter={() => setIsActive5(true)} onMouseLeave={onMouseLeave}
+            <div onMouseEnter={() => setIsActive5(true)} onMouseLeave={onMouseLeave} data-aos="zoom-in" data-aos-delay="600"
                  className="hidden sm:block  w-[260px] h-[300px] duration-300 overflow-y-visible relative">
                 {isActive5 ?
                     <div
@@ -228,8 +228,8 @@ const KeyAspects = () => {
                     </p>}
             </div>
             <NotesSlider/>
-            <div data-aos="flip-up" data-aos-duration="500"
-                className="w-full sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
+            <div data-aos="zoom-in" data-aos-delay="900"
+                 className="w-full sm:w-[260px] px-4 sm:px-0 sm:h-[300px]">
                 <Link to={"contactForm"} offset={-190} smooth={true} duration={900}
                       className="sm:h-[300px] sm:w-[260px] sm:p-8 sm:justify-between cursor-pointer bg-white bg-opacity-20 rounded-[30px] border border-white flex flex-col px-4 py-8 gap-8 w-full">
                     <p className="w-full self-center">Want to write to us? Ask us a question or send your feedback.</p>
